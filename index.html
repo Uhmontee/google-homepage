@@ -8,10 +8,32 @@ margin-top: 15%;
     justify-content: space-evenly;
     padding-top: 20px;
 }
+.searchContainer{
+  background-color: red;
+   height: 40px;
+    width: 5in;
+    border-radius: 30px;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    }
+
 .search-bar input{    height: 40px;
     width: 5in;
     border-radius: 30px;
-    border-color: rgb(148 146 146 / 37%);}
+    border-color: rgb(148 146 146 / 37%);
+    font-size: 18px;
+  padding-left: 50px;
+display: block;}
+
+    .search-bar input:hover, .search-bar input:focus {
+  outline: none;}
+div .search-icon{display:unset;}
+
+.search-icon span{    position: absolute;
+    margin-left: 32.5%;
+    margin-top: 27;}
 
     .navigation{
       display: flex;
@@ -22,10 +44,18 @@ margin-top: 15%;
     display: inline;
     padding: 0 15px 0 15px;
     }
+    .navigation ul li a {text-decoration: none;}
+
+    .navigation ul li:hover{text-decoration: underline;}
+
     body{font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;}
-    .navigation ul li sspan{padding: 0 15px 0 15px;
+
+    .navigation ul li span{padding: 0 15px 0 15px;
+      position: relative;
+    top: 6px;
     }
+    
 </style>
 
 <body>
@@ -44,11 +74,16 @@ margin-top: 15%;
   </ul>
 </div>
       <div class="google-logo">
+      
       <img src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google-logo">
+     
     </div>
-
+    <div class="search-icon">
+<span class="material-icons">search</span></div>
     <div class="search-bar">
+     
 <input type="text" placeholder="">
-    </div>
 
+ 
+</div> 
 </body>
